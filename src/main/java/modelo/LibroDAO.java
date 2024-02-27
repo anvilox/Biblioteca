@@ -67,7 +67,7 @@ public class LibroDAO {
 	public ArrayList<Libro> getLibros() throws RuntimeException {
 		try {
 			stm = conn.createStatement();
-			String consulta = "select * from Libros";
+			String consulta = "select * from libros";
 			rs = stm.executeQuery(consulta);
 			ArrayList<Libro> libros = new ArrayList<Libro>();
 			while (rs.next()) {
